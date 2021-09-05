@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+
+<body class="justify-content-center">
+    <h1>Music Player</h1>
+    <div id="music" class="col-10">
+        <canvas id="analyser_render" height="150px" width="100%" style="border: 1px solid black;"></canvas>
+    </div>
+    <div class="music-container col-12 justify-content-center">
+        <div class="music-info col-10">
+            <h4 id="title">Ninnu Kori</h4>
+            <div class="progress-container ">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <audio src="../music/ninnuKori.mp3" id="audio"></audio>
+
+        <div id="navigation">
+            <button id="prev" class="action-btn btn ">
+                <i class="fas fa-volume-up"></i>
+            </button>
+            <button id="play" class="action-btn action-btn-big btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
